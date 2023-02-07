@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+}
+
+.page {
+    display: block;
+    background-color: rgb(240, 242, 245);
+    padding-top: 72px;
+    padding-bottom: 150px;
+}
+
+.heading {
+    height: 496px;
+    width: 980px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin: 0 auto;
+    min-width: 500px;
+}
+
+.logo {
+    height: 106px;
+    margin: -28px;
+    padding: 132px 0px 16px;
+}
+
+
+.welcome {
+    margin-left: -8px;
+    padding-right: 32px;
+}
+
+.welcome-text {
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-size: 28px;
+    line-height: 32px;
+    width: auto;
+    font-weight: normal;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.intro {
+    margin-left: 69px;
+    margin-top: 60px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: #dddfe2;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    background-color: rgb(255, 255, 255);
+    width: 396px;
+    height: 335px;
+}
+
+.block {
+    padding: 6px 0px;
+}
+
+.key-block {
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+}
+input:focus {
+    outline: none;
+}
+
+.key-block:focus {
+    border: 1px solid rgb(0, 100, 250);
+}
+
+.key-button {
+    background-color: rgb(24, 119, 242);
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding: 14px 16px;
+    width: 363px;
+    cursor: pointer;
+}
+
+.key-button:hover {
+    background-color: rgb(24, 119, 222);
+    border-color: rgb(24, 119, 222);
+}
+
+.link-block {
+    margin-top: 10px;
+}
+
+
+.reset-password {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1877F2;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    margin: 20px 16px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.link-new-block {
+    padding: 22px;
+}
+
+.create-new-account {
+    color: rgb(255, 255, 255);
+    background-color: #42B72A;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.create-new-account:hover {
+    text-decoration: none;
+    background-color: rgb(66, 163, 42);
+}
+
+.coop-block {
+    margin-top: 30px;
+    margin-left: 60px;
+    color: #1C1E21;
+    font-size: 14px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    width: 420px;
+    text-align: center;
+}
+
+.coop-link {
+    color: #1C1E21;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ending {
+    padding: 20px 0px 0px;
+}
+
+.ending {
+    padding-top: 20px;
+}
+
+.ending-elem {
+    margin: 0 auto;
+    width: 980px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #737373;
+    font-size: 12px;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /*margin-block-start: 1em;*/
+    /*margin-block-end: 1em;*/
+    /*margin-inline-start: 0px;*/
+    /*scroll-margin-inline-end: 0px;*/
+    /*padding-inline-start: 40px;*/
+}
+
+li .link-language{
+    padding: 0px 0px 0px 10px;
+    /*margin-right: 5px;*/
+}
+
+li .link-feature {
+    padding: 0px 0px 0px 20px;
+}
+
+.link-language-group {
+    padding-top: 8px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-features-group {
+    line-height: 1.6;
+    margin-left: -20px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-language {
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.link-feature {
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.ending-line {
+    height: 8px;
+    border-bottom: 1px solid #dddfe2;
+    margin-bottom: 8px;
+}
+
+.meta {
+    margin: 20px 0px;
+    color: #737373;
+    font-size: 11px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.ad-png {
+    width: 15px;
+}

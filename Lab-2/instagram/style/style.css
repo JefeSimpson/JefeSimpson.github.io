@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.logo {
+    margin: 45px 0px 33px 90px;
+    background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yr/r/NL0hPV-L09m.png");
+    background-position: 0px 0px;
+    background-size: 176px 186px;
+    width: 174px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.heading-main {
+    margin-top: 48px;
+    margin-left: 23px;
+}
+
+.authentication {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1px;
+    width: 348px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.block {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.key-block {
+    border-radius: 2px;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: rgb(250, 250, 250);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    padding: 9px 0 7px 8px;
+    width: 258px;
+}
+
+.block-two {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.button-block {
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 268px;
+    background-color: rgb(77, 181, 249);
+    /*padding: 9px 0 7px 8px;*/
+    padding: 9px 0px;
+}
+
+.line-or-block {
+    margin-left: 40px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.line-block {
+    margin-top: 10px;
+    width: 102px;
+    height: 0.5px;
+    background-color: rgb(219, 219, 219);
+}
+
+.or-block {
+    color: rgb(142, 142, 142);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin: 0px 18px;
+}
+
+.facebook-img {
+    display: inline-block;
+    background-image: url("https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png");
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+    margin-right: 175px;
+}
+
+.button-facebook {
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+.facebook {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.facebook-text {
+    margin-top: -22px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(56, 81, 133);
+    margin-left: 0px;
+}
+
+.reset-password {
+    margin-top: 5px;
+    margin-left: 135px;
+}
+
+.link-reset {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 55, 107);
+}
+
+.new-account {
+    margin: 10px 0;
+    width: 348px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.new-account-text {
+    font-weight: 400;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(36, 36, 36);
+}
+
+.new-account-link {
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+    text-decoration: none;
+}
+
+.new-account-link:hover {
+    text-decoration: none;
+}
+
+.app-text {
+    width: 348px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(36, 36, 36);
+}
+
+.app-img {
+    margin-top: 5px;
+    width: 348px;
+    text-align: center;
+}
+
+.img-st {
+    margin-top: 2px;
+    margin-left: 5px;
+    height: 40px;
+}
+
+.heading-iphone {
+    margin-top: 32px;
+    margin-left: 380px;
+}
+
+.iphone-img {
+    height: 580px;
+}
+
+.ending {
+    margin-top: 60px;
+    margin-left: 160px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.end-link {
+    margin-right: 15px;
+    color: rgb(142, 142, 142);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.end-link:hover {
+    text-decoration: none;
+}
+
+.end-sl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(142, 142, 142);
+}
+
+select {
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+option {
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sel-lan {
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(250, 250, 250);
+}
+
+.meta-text {
+    margin-top: 5px;
+    margin-right: 30px;
+}
