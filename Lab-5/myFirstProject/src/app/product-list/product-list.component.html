@@ -1,0 +1,40 @@
+<!--<h2>Products</h2>-->
+
+<!--<div *ngFor="let product of products">-->
+<!--  <h3>-->
+<!--    <a-->
+<!--      [title]="product.name + ' details'"-->
+<!--      [routerLink]="['/products', product.id]"-->
+<!--    >-->
+<!--      {{ product.name }}-->
+<!--    </a>-->
+<!--  </h3>-->
+<!--  <h4>{{ product.rating.toFixed(1) + ' out of 5.0' }}</h4>-->
+
+<!--  <img src="{{ product.image }}" alt="pht">-->
+<!--  <p *ngIf="product.description"><ng-container *ngFor="let line of product.description.split('\n')">-->
+<!--    {{ line }}<br />-->
+<!--  </ng-container>-->
+<!--  </p>-->
+
+<!--  <button type="button" style="margin-right: 10px" (click)="share()">-->
+<!--    <a target="_blank" style="color: rgb(255, 255, 255); padding: 0" [title]="'Share telegram'" href="https://t.me/share/url?url={{product.source}}&text={{product.name + ' on Kaspi'}}">Share via telegram</a>-->
+<!--  </button>-->
+<!--  <button type="button" (click)="share()">-->
+<!--    <a target="_blank" style="color: rgb(255, 255, 255); padding: 0" [title]="'Share whatsApp'" href="https://wa.me/?text={{product.source}}" data-action="share/whatsapp/share">Share via whatsApp</a>-->
+<!--  </button>-->
+
+<!--  <app-product-alerts [product]="product" (notify)="onNotify()">-->
+<!--  </app-product-alerts>-->
+<!--</div>-->
+
+<div class=""></div>
+<h2>Products</h2>
+<!--<fieldset>-->
+  <app-product-item [categoryId]=categoryId></app-product-item>
+<!--</fieldset>-->
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

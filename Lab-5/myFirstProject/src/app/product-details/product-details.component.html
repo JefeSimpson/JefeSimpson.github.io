@@ -1,0 +1,13 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3> {{product.name}} </h3>
+  <h4> {{product.price | currency: 'KZT'}} </h4>
+  <h5> {{product.rating.toFixed(1) + ' out of 5.0'}}</h5>
+  <img src="{{product.image}}" alt="img">
+  <p *ngIf="product.description"><ng-container *ngFor="let line of product.description.split('\n')">
+    {{ line }}<br />
+  </ng-container>
+  </p>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

@@ -1,0 +1,38 @@
+
+<div *ngFor="let product of products">
+    <div class="product-table" *ngIf="product.category == categoryId && !product.completed">
+        <fieldset>
+
+        <h3>
+            <a
+                    [title]="product.name + ' details'"
+                    [routerLink]="['/products', product.id]"
+            >
+                {{ product.name }}
+            </a>
+        </h3>
+        <h4>{{ product.rating.toFixed(1) + ' out of 5.0' }}</h4>
+
+        <img src="{{ product.image }}" alt="pht">
+        <p *ngIf="product.description"><ng-container *ngFor="let line of product.description.split('\n')">
+            {{ line }}<br />
+        </ng-container>
+        </p>
+
+        <button type="button" style="margin-right: 10px" (click)="share()">
+            <a target="_blank" style="color: rgb(255, 255, 255); padding: 0" [title]="'Share telegram'" href="https://t.me/share/url?url={{product.source}}&text={{product.name + ' on Kaspi'}}">Share via telegram</a>
+        </button>
+        <button type="button" style="margin-right: 10px" (click)="share()">
+            <a target="_blank" style="color: rgb(255, 255, 255); padding: 0" [title]="'Share whatsApp'" href="https://wa.me/?text={{product.source}}" data-action="share/whatsapp/share">Share via whatsApp</a>
+        </button>
+
+        <app-product-alerts [product]="product" (notify)="onNotify()">
+        </app-product-alerts>
+
+        <button type="button" style="margin-right: 10px" (click)="removeItem(product)">Remove</button>
+        <h4>Likes : {{product.likes }}</h4>
+        <button type="button" style="margin-right: 10px" (click)="likeIterator(product)">Like</button>
+        <button type="button" style="margin-right: 10px" (click)="disLikeIterator(product)">Dislike</button>
+        </fieldset>
+    </div>
+</div>

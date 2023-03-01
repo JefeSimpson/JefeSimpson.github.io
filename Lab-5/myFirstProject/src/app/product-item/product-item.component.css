@@ -1,0 +1,11 @@
+.product-table {
+    /*display: flex;*/
+    /*flex-wrap: ;*/
+    /*flex-direction: row;*/
+}
+
+fieldset {
+    width: auto;
+    margin: 5% 0;
+    border: 2px solid rgb(25, 118, 210)
+}
