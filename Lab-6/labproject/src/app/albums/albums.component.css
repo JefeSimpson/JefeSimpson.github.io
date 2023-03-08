@@ -1,0 +1,14 @@
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+li {
+  padding: 5px;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid rgb(120, 120, 201);
+}

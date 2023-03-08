@@ -1,0 +1,20 @@
+<!--<p>albums works!</p>-->
+<h2>Album list</h2>
+
+<fieldset>
+  <input type="text" [(ngModel)]="newAlbum.title" style="margin-right: 20px">
+<!--  <textarea [(ngModel)]="newAlbum." ></textarea>-->
+  <button (click)="addAlbum()">Add Album</button>
+</fieldset>
+
+<ul *ngIf="loaded">
+  <li *ngFor="let album of albums">
+    {{album.id}})
+    <a routerLink="/albums/{{album.id}}">
+      {{album.title}}
+    </a>
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ul>
+
+<h3 *ngIf="!loaded">Page is loading...</h3>

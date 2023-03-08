@@ -1,0 +1,20 @@
+<!--<p>album-detail works!</p>-->
+<div *ngIf="loaded">
+  <h2>Album detail #{{album.id}}</h2>
+
+  <h3>Title:</h3>
+  <p>{{album.title}}</p>
+  <fieldset>
+    <label>Edit the title:</label>
+    <input class="update-input" type="text" [(ngModel)]="title">
+    <button (click)="putAlbum()">Save</button>
+  </fieldset>
+  <button (click)="toBack()">Return Back -> </button>
+</div>
+
+<div *ngIf="loaded">
+  <a routerLink="/albums/{{album.id}}/photos">Photo link</a>
+</div>
+
+
+<h3 *ngIf="!loaded">Page is loading...</h3>

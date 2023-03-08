@@ -1,0 +1,28 @@
+fieldset {
+  margin: 0 15px;
+}
+
+div {
+  padding: 5px;
+  /*width: 35%;*/
+}
+
+span {
+  font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+img {
+  margin-top: 5px;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid rgb(120, 120, 201);
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}

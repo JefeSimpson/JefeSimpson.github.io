@@ -1,0 +1,16 @@
+<!--<p>album-photos works!</p>-->
+<div *ngIf="loaded">
+  <h2>Album photos:</h2>
+  <button (click)="toBack()">Return Back -></button>
+  <ul *ngIf="photos.length">
+
+    <li *ngFor="let photo of photos">
+      <fieldset>
+      <span>{{photo.id}}(id) {{photo.title}} </span><br>
+      <img src="{{photo.url}}" alt="image">
+      </fieldset>
+    </li>
+  </ul>
+</div>
+
+<h3 *ngIf="!loaded">Page is loading...</h3>

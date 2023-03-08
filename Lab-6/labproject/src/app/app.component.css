@@ -1,0 +1,18 @@
+.router-ul {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /*text-decoration: none;*/
+}
+
+.router-ul a {
+  color: rgb(150, 120, 190);
+  text-decoration: none;
+}
+
+.h1-app {
+  color: rgb(200, 180, 120);
+  margin-left: 44%;
+}

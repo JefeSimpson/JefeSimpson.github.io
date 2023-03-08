@@ -1,0 +1,27 @@
+.update-input {
+  margin: 0 10px;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid rgb(120, 120, 201);
+}
+
+label {
+  color: red;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+
+a {
+  /*margin-top: 15px;*/
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+div {
+  margin: 10px 0;
+}
+
