@@ -1,0 +1,22 @@
+<h2>Vacancy List</h2>
+
+<fieldset>
+  <input type="text" [(ngModel)]="name" placeholder="name">
+  <input type="text" [(ngModel)]="salary" placeholder="salary">
+  <input type="text" [(ngModel)]="company" placeholder="company id">
+  <textarea [(ngModel)]="description" placeholder="description"></textarea>
+  <button (click)="addVacancy()">Add Vacancy</button>
+</fieldset>
+
+<ul *ngIf="loaded">
+  <li *ngFor="let vacancy of vacancies">
+    {{vacancy.id}})
+    <a routerLink="/vacancies/{{vacancy.id}}">
+      {{vacancy.name}}
+    </a>
+    <p>provided by this company: {{vacancy.company.name}}</p>
+    <button (click)="deleteVacancy(vacancy.id)">Delete</button>
+  </li>
+</ul>
+
+<h3 *ngIf="!loaded">Page is loading...</h3>

@@ -1,0 +1,30 @@
+
+<div *ngIf="loaded">
+  <h2>Vacancy Detail #{{vacancy.id}}</h2>
+
+  <h4>Name:</h4>
+  <p>{{vacancy.name}}</p>
+  <h4>Description:</h4>
+  <p>{{vacancy.description}}</p>
+  <h4>Salary:</h4>
+  <p>{{vacancy.salary}}</p>
+  <h4>Company:</h4>
+  <p>{{vacancy.company.name}}</p>
+
+  <fieldset>
+    <label>Edit the Vacancy:</label>
+    <input type="text" [(ngModel)]="name" placeholder="name">
+    <input type="text" [(ngModel)]="salary" placeholder="salary">
+    <input type="text" [(ngModel)]="company" placeholder="company">
+    <textarea [(ngModel)]="description" placeholder="description"></textarea>
+    <button (click)="updateVacancy(vacancy.id)">Update Company</button>
+  </fieldset>
+
+  <button (click)="toBack()")>Return Back -> </button>
+</div>
+
+<!--<div *ngIf="loaded">-->
+<!--  <a routerLink="/companies/{{company.id}}/vacancies">Vacancy list of the Company</a>-->
+<!--</div>-->
+
+<h3 *ngIf="!loaded">Page is loading...</h3>

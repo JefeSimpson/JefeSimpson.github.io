@@ -1,0 +1,20 @@
+.pgnt-h1 {
+  color: blanchedalmond;
+  font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  /*margin: 0;*/
+  /*padding:;*/
+}
+
+.pgnt-h2 {
+  color: aqua;
+  font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+
+.pgnt-div {
+  padding-top: 200px;
+  height: 20%;
+  /*background-color: blue;*/
+  text-align: center;
+}

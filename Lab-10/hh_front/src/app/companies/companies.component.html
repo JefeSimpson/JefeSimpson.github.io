@@ -1,0 +1,21 @@
+<h2>Company List</h2>
+
+<fieldset>
+  <input type="text" [(ngModel)]="name" placeholder="name">
+  <input type="text" [(ngModel)]="city" placeholder="city">
+  <input type="text" [(ngModel)]="address" placeholder="address">
+  <textarea [(ngModel)]="description" placeholder="description"></textarea>
+  <button (click)="addCompany()">Add Company</button>
+</fieldset>
+
+<ul *ngIf="loaded">
+  <li *ngFor="let company of companies">
+    {{company.id}})
+    <a routerLink="/companies/{{company.id}}">
+      {{company.name}}
+    </a>
+    <button (click)="deleteCompany(company.id)">Delete</button>
+  </li>
+</ul>
+
+<h3 *ngIf="!loaded">Page is loading...</h3>

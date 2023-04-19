@@ -1,0 +1,20 @@
+<div *ngIf="loaded">
+  <h2>Company Vacancies #{{company_id}}</h2>
+
+  <div *ngFor="let vacancy of vacancies">
+    <h2>Vacancy #{{vacancy.id}}</h2>
+    <h4>Name:</h4>
+    <p>{{vacancy.name}}</p>
+    <h4>Description:</h4>
+    <p>{{vacancy.description}}</p>
+    <h4>Salary:</h4>
+    <p>{{vacancy.salary}}</p>
+    <h4>Company:</h4>
+    <p>{{vacancy.company.name}}</p>
+  </div>
+
+
+  <button (click)="toBack()")>Return Back -></button>
+</div>
+
+<h3 *ngIf="!loaded">Page is loading...</h3>
